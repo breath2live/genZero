@@ -2,9 +2,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sloth import sloth
 import indicator
 import bigdataOption
-import sys, os
+import sys
 import datetime as dt
 
 
@@ -64,7 +65,7 @@ def getdata():
 	# impporting option data
 	if loadOptionData == 1: loadOption()
 def loadOption():
-	for i in range(2007,2009):
+	for i in range(2007,2021):
 		option[i] = pd.read_csv('~/mktData/{}/RAW_IV.csv'.format(i), index_col='date', parse_dates=True)
 		option[i]['option_expiration'] = pd.to_datetime(option[i]['option_expiration'])
 		showMe(str(i), 'Option data imported.')
@@ -91,14 +92,10 @@ def rundata():
 	enddate = stock.index[cntmax]
 
 
-	# trades and portfolio
-	portfolio = pd.DataFrame([], index=pd.DatetimeIndex([], name='date'), columns=[['NLV', 'margin', 'unreal', 'real']])
-	position = pd.DataFrame([], index=pd.DatetimeIndex([], name='date'), columns=[['contract', 'side', 'quantity', 'value', 'avgPrive']])
+	# dna
 	trades = pd.DataFrame([], index=pd.DatetimeIndex([], name='date'), columns=option[2007].columns)
 	tradescnt = 0
-	openpos = []
 
-	# dna
 	opencnt = 0
 	opencntmax = 10
 
@@ -107,10 +104,11 @@ def rundata():
 
 
 	# run
-	for date in stock.loc[(stock.index >= '2007-01-01') & (stock.index < '2008-01-01')].index:
+	for date in stock.loc[(stock.index >= '2007-01-01') & (stock.index < '2020-01-01')].index:
 		#showMe('{} / {}  | {} % | {}'.format(cnt, cntmax, round((cnt+1)/(cntmax+1)*100, 2), date))
 		rank = stock.loc[date]['iv-close-Rank50']
-		if rank > 70 and opencnt < opencntmax:
+		rank2 = stock.loc[date]['iv-close-Rank252']
+		if rank > 60 and rank2 < 80 and opencnt < opencntmax:
 			tradescnt += 1
 			showMe('###################################################################')
 			showMe('##### Date:', date)
@@ -118,13 +116,22 @@ def rundata():
 			showMe('##### Open Trade. Trigger: iv-close-Rank50 value:', rank)
 
 			# get Contract
+			# Call
+			contract_call = bigdataOption.getContractByDelta(option, date, delta, call_put='C', duration=duration).copy()
+			trades = trades.append(contract_call)
+			disp = contract_call
 			# Put
 			contract_put = bigdataOption.getContractByDelta(option, date, delta, call_put='P', duration=duration).copy()
 			trades = trades.append(contract_put)
-			openpos.append(contract_put[['option_expiration', 'call_put', 'strike']])
-			disp = contract_put
+			disp = disp.append(contract_put)
 
 			# expired Contract
+			# call
+			contract_call = bigdataOption.getDetailsOnExpiration(option, contract_call).copy()
+			contract_call['exchange'] = 'EXPIRED'
+			contract_call['mean_price'] = -contract_call['mean_price']
+			trades = trades.append(contract_call)
+			disp = disp.append(contract_call)
 			# put
 			contract_put = bigdataOption.getDetailsOnExpiration(option, contract_put).copy()
 			contract_put['exchange'] = 'EXPIRED'
@@ -134,9 +141,7 @@ def rundata():
 
 			showMe('Contract(s):\n', disp[['exchange', 'option_expiration', 'call_put', 'strike', 'mean_price', 'delta']], '\n\n')
 
-		# for each openPos -> track position, if expired: remove from list
-		position = position.append(pd.DataFrame([['', 'SELL', 1, price, 1*price]], index=[date]))
-
+			# more details
 
 
 
