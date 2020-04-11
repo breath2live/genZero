@@ -5862,3 +5862,1326 @@ date
 [rundata]##### Date: 2017-08-24 00:00:00
 [rundata]##### Stock Price (close): 243.99 iv-close: 0.09858069
 [rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 65.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-08-24  NYSEArca        2017-10-06        C   250.0       0.525  0.160334
+2017-08-24  NYSEArca        2017-10-06        P   235.0       1.480 -0.216323
+2017-10-06   EXPIRED        2017-10-06        C   250.0      -4.250  0.000000
+2017-10-06   EXPIRED        2017-10-06        P   235.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2017-11-13 00:00:00
+[rundata]##### Stock Price (close): 258.33 iv-close: 0.0839444
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 64.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-11-13  NYSEArca        2017-12-29        C   264.0        0.70  0.186412
+2017-11-13  NYSEArca        2017-12-29        P   248.0        1.41 -0.201202
+2017-12-29   EXPIRED        2017-12-29        C   264.0       -2.20  0.000000
+2017-12-29   EXPIRED        2017-12-29        P   248.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2017-11-14 00:00:00
+[rundata]##### Stock Price (close): 257.73 iv-close: 0.08613508
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 92.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-11-14  NYSEArca        2017-12-29        C   263.0       0.760  0.202869
+2017-11-14  NYSEArca        2017-12-29        P   248.0       1.445 -0.207697
+2017-12-29   EXPIRED        2017-12-29        C   263.0      -3.105  0.000000
+2017-12-29   EXPIRED        2017-12-29        P   248.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2017-11-15 00:00:00
+[rundata]##### Stock Price (close): 256.44 iv-close: 0.09975541
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-11-15  NYSEArca        2017-12-29        C   262.0       0.775  0.200162
+2017-11-15  NYSEArca        2017-12-29        P   246.0       1.525 -0.205354
+2017-12-29   EXPIRED        2017-12-29        C   262.0      -4.045  0.000000
+2017-12-29   EXPIRED        2017-12-29        P   246.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2017-11-30 00:00:00
+[rundata]##### Stock Price (close): 265.01 iv-close: 0.08884962
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 69.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-11-30  NYSEArca        2018-01-12        C   270.0       0.720  0.188764
+2017-11-30  NYSEArca        2018-01-12        P   255.0       1.250 -0.200819
+2018-01-12   EXPIRED        2018-01-12        C   270.0      -8.095  0.000000
+2018-01-12   EXPIRED        2018-01-12        P   255.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2017-12-01 00:00:00
+[rundata]##### Stock Price (close): 264.46 iv-close: 0.08959572
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 71.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-12-01  NYSEArca        2018-01-12        C   270.0       0.710  0.192619
+2017-12-01  NYSEArca        2018-01-12        P   255.0       1.260 -0.197728
+2018-01-12   EXPIRED        2018-01-12        C   270.0      -8.095  0.000000
+2018-01-12   EXPIRED        2018-01-12        P   255.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2017-12-04 00:00:00
+[rundata]##### Stock Price (close): 264.14 iv-close: 0.0893576
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 70.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2017-12-04  NYSEArca        2018-01-19        C   270.0       0.700  0.183660
+2017-12-04  NYSEArca        2018-01-19        P   254.0       1.380 -0.201142
+2018-01-19   EXPIRED        2018-01-19        C   270.0     -10.125  0.000000
+2018-01-19   EXPIRED        2018-01-19        P   254.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-16 00:00:00
+[rundata]##### Stock Price (close): 276.97 iv-close: 0.09354847
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 81.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-16  NYSEArca        2018-03-02        C   285.0        0.89  0.200318
+2018-01-16  NYSEArca        2018-03-02        P   268.0        1.30 -0.192883
+2018-03-02   EXPIRED        2018-03-02        C   285.0       -0.00  0.000000
+2018-03-02   EXPIRED        2018-03-02        P   268.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-17 00:00:00
+[rundata]##### Stock Price (close): 279.61 iv-close: 0.09221502
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 76.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-17  NYSEArca        2018-03-02        C   287.0        0.96  0.208154
+2018-01-17  NYSEArca        2018-03-02        P   271.0        1.36 -0.206932
+2018-03-02   EXPIRED        2018-03-02        C   287.0       -0.00  0.000000
+2018-03-02   EXPIRED        2018-03-02        P   271.0       -1.97  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-18 00:00:00
+[rundata]##### Stock Price (close): 279.14 iv-close: 0.09470731
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 84.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-18  NYSEArca        2018-03-02        C   287.0       0.825  0.184981
+2018-01-18  NYSEArca        2018-03-02        P   270.0       1.375 -0.204683
+2018-03-02   EXPIRED        2018-03-02        C   287.0      -0.000  0.000000
+2018-03-02   EXPIRED        2018-03-02        P   270.0      -0.850  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-19 00:00:00
+[rundata]##### Stock Price (close): 280.41 iv-close: 0.08726217
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 61.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-19  NYSEArca        2018-03-02        C   287.5       0.850  0.199710
+2018-01-19  NYSEArca        2018-03-02        P   272.0       1.270 -0.203388
+2018-03-02   EXPIRED        2018-03-02        C   287.5      -0.000  0.000000
+2018-03-02   EXPIRED        2018-03-02        P   272.0      -2.865  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-22 00:00:00
+[rundata]##### Stock Price (close): 282.69 iv-close: 0.08745266
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 62.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-22  NYSEArca        2018-03-02        C   290.0        0.77  0.188655
+2018-01-22  NYSEArca        2018-03-02        P   274.0        1.15 -0.190247
+2018-03-02   EXPIRED        2018-03-02        C   290.0       -0.00  0.000000
+2018-03-02   EXPIRED        2018-03-02        P   274.0       -4.93  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-23 00:00:00
+[rundata]##### Stock Price (close): 283.29 iv-close: 0.0894846
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 68.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-23  NYSEArca        2018-03-02        C   290.0       0.950  0.215072
+2018-01-23  NYSEArca        2018-03-02        P   275.0       1.220 -0.201625
+2018-03-02   EXPIRED        2018-03-02        C   290.0      -0.000  0.000000
+2018-03-02   EXPIRED        2018-03-02        P   275.0      -5.775  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-24 00:00:00
+[rundata]##### Stock Price (close): 283.18 iv-close: 0.09537404
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 86.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-24  NYSEArca        2018-03-16        C   293.0       1.000  0.186042
+2018-01-24  NYSEArca        2018-03-16        P   272.0       1.565 -0.193545
+2018-03-16   EXPIRED        2018-03-16        C   293.0      -0.000  0.000000
+2018-03-16   EXPIRED        2018-03-16        P   272.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-25 00:00:00
+[rundata]##### Stock Price (close): 283.3 iv-close: 0.09534229
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 86.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-25  NYSEArca        2018-03-09        C   292.5       0.875  0.180671
+2018-01-25  NYSEArca        2018-03-09        P   275.0       1.540 -0.219673
+2018-03-09   EXPIRED        2018-03-09        C   292.5      -0.000  0.000000
+2018-03-09   EXPIRED        2018-03-09        P   275.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-26 00:00:00
+[rundata]##### Stock Price (close): 286.58 iv-close: 0.09505655
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 85.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-26  NYSEArca        2018-03-09        C   295.0        1.03  0.204422
+2018-01-26  NYSEArca        2018-03-09        P   277.5        1.34 -0.198610
+2018-03-09   EXPIRED        2018-03-09        C   295.0       -0.00  0.000000
+2018-03-09   EXPIRED        2018-03-09        P   277.5       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-29 00:00:00
+[rundata]##### Stock Price (close): 284.68 iv-close: 0.11266138
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-29  NYSEArca        2018-03-16        C   294.0       1.265  0.210588
+2018-01-29  NYSEArca        2018-03-16        P   272.0       1.740 -0.193227
+2018-03-16   EXPIRED        2018-03-16        C   294.0      -0.000  0.000000
+2018-03-16   EXPIRED        2018-03-16        P   272.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-01-31 00:00:00
+[rundata]##### Stock Price (close): 281.9 iv-close: 0.11475682
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 90.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-01-31  NYSEArca        2018-03-16        C   291.0        1.11  0.203792
+2018-01-31  NYSEArca        2018-03-16        P   271.0        1.78 -0.206889
+2018-03-16   EXPIRED        2018-03-16        C   291.0       -0.00  0.000000
+2018-03-16   EXPIRED        2018-03-16        P   271.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-02-01 00:00:00
+[rundata]##### Stock Price (close): 281.58 iv-close: 0.11312174
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 87.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-02-01  NYSEArca        2018-03-16        C   290.0       1.175  0.212783
+2018-02-01  NYSEArca        2018-03-16        P   270.0       1.680 -0.198913
+2018-03-16   EXPIRED        2018-03-16        C   290.0      -0.000  0.000000
+2018-03-16   EXPIRED        2018-03-16        P   270.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-02-06 00:00:00
+[rundata]##### Stock Price (close): 269.13 iv-close: 0.21671878
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 74.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-02-06  NYSEArca        2018-03-23        C   283.0       1.665  0.196181
+2018-02-06  NYSEArca        2018-03-23        P   250.0       2.970 -0.203333
+2018-03-23   EXPIRED        2018-03-23        C   283.0      -0.000  0.000000
+2018-03-23   EXPIRED        2018-03-23        P   250.0      -0.015  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-02-09 00:00:00
+[rundata]##### Stock Price (close): 261.5 iv-close: 0.21887771
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 75.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-02-09  NYSEArca        2018-03-23        C   275.0       1.500  0.190721
+2018-02-09  NYSEArca        2018-03-23        P   242.5       3.090 -0.204723
+2018-03-23   EXPIRED        2018-03-23        C   275.0      -0.000  0.000000
+2018-03-23   EXPIRED        2018-03-23        P   242.5      -0.015  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-03-23 00:00:00
+[rundata]##### Stock Price (close): 258.05 iv-close: 0.19905045
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 64.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-03-23  NYSEArca        2018-05-04        C   271.5        1.42  0.195936
+2018-03-23  NYSEArca        2018-05-04        P   242.5        2.67 -0.204731
+2018-05-04   EXPIRED        2018-05-04        C   271.5       -0.00  0.000000
+2018-05-04   EXPIRED        2018-05-04        P   242.5       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-04-02 00:00:00
+[rundata]##### Stock Price (close): 257.47 iv-close: 0.19949494
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 62.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-04-02  NYSEArca        2018-05-18        C   271.0       1.685  0.204057
+2018-04-02  NYSEArca        2018-05-18        P   240.0       2.615 -0.198325
+2018-05-18   EXPIRED        2018-05-18        C   271.0      -0.395  0.000000
+2018-05-18   EXPIRED        2018-05-18        P   240.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-06-25 00:00:00
+[rundata]##### Stock Price (close): 271.0 iv-close: 0.12999634
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 64.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-06-25  NYSEArca        2018-08-03        C   280.0        0.96  0.193481
+2018-06-25  NYSEArca        2018-08-03        P   259.0        1.90 -0.202633
+2018-08-03   EXPIRED        2018-08-03        C   280.0       -3.58  0.000000
+2018-08-03   EXPIRED        2018-08-03        P   259.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-06-27 00:00:00
+[rundata]##### Stock Price (close): 269.35 iv-close: 0.14112437
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 80.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-06-27  NYSEArca        2018-08-17        C   280.0       1.175  0.197891
+2018-06-27  NYSEArca        2018-08-17        P   255.0       2.165 -0.196661
+2018-08-17   EXPIRED        2018-08-17        C   280.0      -5.160  0.000000
+2018-08-17   EXPIRED        2018-08-17        P   255.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-06-28 00:00:00
+[rundata]##### Stock Price (close): 270.89 iv-close: 0.13069482
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 65.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-06-28  NYSEArca        2018-08-10        C   280.0       1.035  0.199350
+2018-06-28  NYSEArca        2018-08-10        P   258.0       1.870 -0.194655
+2018-08-10   EXPIRED        2018-08-10        C   280.0      -3.630  0.000000
+2018-08-10   EXPIRED        2018-08-10        P   258.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-04 00:00:00
+[rundata]##### Stock Price (close): 289.44 iv-close: 0.10350179
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 90.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-04  NYSEArca        2018-11-16        C   298.0       1.015  0.205080
+2018-10-04  NYSEArca        2018-11-16        P   278.0       1.860 -0.205073
+2018-11-16   EXPIRED        2018-11-16        C   298.0      -0.000  0.000000
+2018-11-16   EXPIRED        2018-11-16        P   278.0      -3.400  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-05 00:00:00
+[rundata]##### Stock Price (close): 287.82 iv-close: 0.11270901
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-05  NYSEArca        2018-11-16        C   297.0       0.995  0.198903
+2018-10-05  NYSEArca        2018-11-16        P   276.0       1.895 -0.201645
+2018-11-16   EXPIRED        2018-11-16        C   297.0      -0.000  0.000000
+2018-11-16   EXPIRED        2018-11-16        P   276.0      -1.600  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-08 00:00:00
+[rundata]##### Stock Price (close): 287.82 iv-close: 0.12085263
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-08  NYSEArca        2018-11-23        C   297.5       0.985  0.192493
+2018-10-08  NYSEArca        2018-11-23        P   275.0       1.910 -0.195120
+2018-11-23   EXPIRED        2018-11-23        C   297.5      -0.000  0.000000
+2018-11-23   EXPIRED        2018-11-23        P   275.0     -11.850  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-09 00:00:00
+[rundata]##### Stock Price (close): 287.4 iv-close: 0.12272582
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-09  NYSEArca        2018-11-23        C   297.0       1.000  0.193198
+2018-10-09  NYSEArca        2018-11-23        P   275.0       1.955 -0.201271
+2018-11-23   EXPIRED        2018-11-23        C   297.0      -0.000  0.000000
+2018-11-23   EXPIRED        2018-11-23        P   275.0     -11.850  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-10 00:00:00
+[rundata]##### Stock Price (close): 278.3 iv-close: 0.18028679
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-10  NYSEArca        2018-11-23        C   289.0       1.465  0.206421
+2018-10-10  NYSEArca        2018-11-23        P   260.0       2.500 -0.193954
+2018-11-23   EXPIRED        2018-11-23        C   289.0      -0.000  0.000000
+2018-11-23   EXPIRED        2018-11-23        P   260.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-11 00:00:00
+[rundata]##### Stock Price (close): 272.17 iv-close: 0.21168656
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-11  NYSEArca        2018-11-23        C   287.0       1.500  0.197849
+2018-10-11  NYSEArca        2018-11-23        P   257.5       2.655 -0.204664
+2018-11-23   EXPIRED        2018-11-23        C   287.0      -0.000  0.000000
+2018-11-23   EXPIRED        2018-11-23        P   257.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-12 00:00:00
+[rundata]##### Stock Price (close): 275.95 iv-close: 0.16930163
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 68.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-12  NYSEArca        2018-11-23        C   287.5       1.305  0.197895
+2018-10-12  NYSEArca        2018-11-23        P   260.0       2.185 -0.189049
+2018-11-23   EXPIRED        2018-11-23        C   287.5      -0.000  0.000000
+2018-11-23   EXPIRED        2018-11-23        P   260.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-15 00:00:00
+[rundata]##### Stock Price (close): 274.4 iv-close: 0.17285752
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 71.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-15  NYSEArca        2018-11-30        C   286.0       1.375  0.200429
+2018-10-15  NYSEArca        2018-11-30        P   257.5       2.390 -0.192928
+2018-11-30   EXPIRED        2018-11-30        C   286.0      -0.000  0.000000
+2018-11-30   EXPIRED        2018-11-30        P   257.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-18 00:00:00
+[rundata]##### Stock Price (close): 276.4 iv-close: 0.16566636
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 65.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-18  NYSEArca        2018-11-30        C   288.0       1.275  0.196096
+2018-10-18  NYSEArca        2018-11-30        P   262.0       2.380 -0.205501
+2018-11-30   EXPIRED        2018-11-30        C   288.0      -0.000  0.000000
+2018-11-30   EXPIRED        2018-11-30        P   262.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-19 00:00:00
+[rundata]##### Stock Price (close): 276.25 iv-close: 0.16004679
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 61.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-19  NYSEArca        2018-11-30        C   287.0        1.34  0.204837
+2018-10-19  NYSEArca        2018-11-30        P   261.0        2.32 -0.200295
+2018-11-30   EXPIRED        2018-11-30        C   287.0       -0.00  0.000000
+2018-11-30   EXPIRED        2018-11-30        P   261.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-22 00:00:00
+[rundata]##### Stock Price (close): 275.01 iv-close: 0.16052302
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 61.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-22  NYSEArca        2018-11-30        C   286.0        1.23  0.195794
+2018-10-22  NYSEArca        2018-11-30        P   261.0        2.27 -0.205531
+2018-11-30   EXPIRED        2018-11-30        C   286.0       -0.00  0.000000
+2018-11-30   EXPIRED        2018-11-30        P   261.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-23 00:00:00
+[rundata]##### Stock Price (close): 273.61 iv-close: 0.17407985
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 72.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-23  NYSEArca        2018-11-30        C   285.0       1.345  0.204697
+2018-10-23  NYSEArca        2018-11-30        P   260.0       2.300 -0.206259
+2018-11-30   EXPIRED        2018-11-30        C   285.0      -0.000  0.000000
+2018-11-30   EXPIRED        2018-11-30        P   260.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-24 00:00:00
+[rundata]##### Stock Price (close): 265.32 iv-close: 0.21684578
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-24  NYSEArca        2018-11-30        C   279.0       1.515  0.199577
+2018-10-24  NYSEArca        2018-11-30        P   250.0       2.640 -0.206158
+2018-11-30   EXPIRED        2018-11-30        C   279.0      -0.000  0.000000
+2018-11-30   EXPIRED        2018-11-30        P   250.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-25 00:00:00
+[rundata]##### Stock Price (close): 270.08 iv-close: 0.19041472
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 81.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-25  NYSEArca        2018-12-07        C   282.5       1.450  0.185877
+2018-10-25  NYSEArca        2018-12-07        P   250.0       2.515 -0.190020
+2018-12-07   EXPIRED        2018-12-07        C   282.5      -0.000  0.000000
+2018-12-07   EXPIRED        2018-12-07        P   250.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-26 00:00:00
+[rundata]##### Stock Price (close): 265.33 iv-close: 0.21516308
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 99.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-26  NYSEArca        2018-12-07        C   280.0       1.605  0.203004
+2018-10-26  NYSEArca        2018-12-07        P   250.0       2.620 -0.201474
+2018-12-07   EXPIRED        2018-12-07        C   280.0      -0.000  0.000000
+2018-12-07   EXPIRED        2018-12-07        P   250.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-29 00:00:00
+[rundata]##### Stock Price (close): 263.86 iv-close: 0.21006736
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 95.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price    delta
+date                                                                        
+2018-10-29  NYSEArca        2018-12-07        C   277.5        1.57  0.19902
+2018-10-29  NYSEArca        2018-12-07        P   247.5        2.58 -0.20154
+2018-12-07   EXPIRED        2018-12-07        C   277.5       -0.00  0.00000
+2018-12-07   EXPIRED        2018-12-07        P   247.5       -0.00  0.00000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-30 00:00:00
+[rundata]##### Stock Price (close): 267.77 iv-close: 0.19759000000000002
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 86.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-30  NYSEArca        2018-12-07        C   281.0        1.65  0.207944
+2018-10-30  NYSEArca        2018-12-07        P   252.5        2.54 -0.205948
+2018-12-07   EXPIRED        2018-12-07        C   281.0       -0.00  0.000000
+2018-12-07   EXPIRED        2018-12-07        P   252.5       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-10-31 00:00:00
+[rundata]##### Stock Price (close): 270.63 iv-close: 0.18327119
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 76.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-10-31  NYSEArca        2018-12-21        C   284.0       1.820  0.208598
+2018-10-31  NYSEArca        2018-12-21        P   252.0       2.715 -0.197782
+2018-12-21   EXPIRED        2018-12-21        C   284.0      -0.000  0.000000
+2018-12-21   EXPIRED        2018-12-21        P   252.0     -11.620  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-01 00:00:00
+[rundata]##### Stock Price (close): 273.51 iv-close: 0.16509488
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 62.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-01  NYSEArca        2018-12-14        C   286.0       1.405  0.195867
+2018-11-01  NYSEArca        2018-12-14        P   258.0       2.220 -0.194326
+2018-12-14   EXPIRED        2018-12-14        C   286.0      -0.000  0.000000
+2018-12-14   EXPIRED        2018-12-14        P   258.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-02 00:00:00
+[rundata]##### Stock Price (close): 271.89 iv-close: 0.16946037
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 65.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-02  NYSEArca        2018-12-14        C   285.0       1.345  0.189026
+2018-11-02  NYSEArca        2018-12-14        P   257.0       2.280 -0.198827
+2018-12-14   EXPIRED        2018-12-14        C   285.0      -0.000  0.000000
+2018-12-14   EXPIRED        2018-12-14        P   257.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-05 00:00:00
+[rundata]##### Stock Price (close): 273.39 iv-close: 0.16857139999999998
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 65.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-05  NYSEArca        2018-12-21        C   286.0       1.695  0.210573
+2018-11-05  NYSEArca        2018-12-21        P   257.0       2.550 -0.201810
+2018-12-21   EXPIRED        2018-12-21        C   286.0      -0.000  0.000000
+2018-12-21   EXPIRED        2018-12-21        P   257.0     -16.630  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-06 00:00:00
+[rundata]##### Stock Price (close): 275.12 iv-close: 0.16782529999999998
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 64.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-06  NYSEArca        2018-12-21        C   288.0       1.560  0.202183
+2018-11-06  NYSEArca        2018-12-21        P   259.0       2.435 -0.198286
+2018-12-21   EXPIRED        2018-12-21        C   288.0      -0.000  0.000000
+2018-12-21   EXPIRED        2018-12-21        P   259.0     -18.615  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-12 00:00:00
+[rundata]##### Stock Price (close): 272.57 iv-close: 0.17357187
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 68.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-12  NYSEArca        2018-12-28        C   284.0       1.580  0.210078
+2018-11-12  NYSEArca        2018-12-28        P   255.0       2.365 -0.189960
+2018-12-28   EXPIRED        2018-12-28        C   284.0      -0.000  0.000000
+2018-12-28   EXPIRED        2018-12-28        P   255.0      -7.085  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-13 00:00:00
+[rundata]##### Stock Price (close): 272.06 iv-close: 0.17209554
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 67.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-13  NYSEArca        2018-12-28        C   284.0       1.485  0.203154
+2018-11-13  NYSEArca        2018-12-28        P   255.0       2.260 -0.186761
+2018-12-28   EXPIRED        2018-12-28        C   284.0      -0.000  0.000000
+2018-12-28   EXPIRED        2018-12-28        P   255.0      -7.085  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-14 00:00:00
+[rundata]##### Stock Price (close): 270.2 iv-close: 0.18330294
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 76.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-14  NYSEArca        2018-12-28        C   282.0       1.515  0.198146
+2018-11-14  NYSEArca        2018-12-28        P   252.5       2.415 -0.194033
+2018-12-28   EXPIRED        2018-12-28        C   282.0      -0.000  0.000000
+2018-12-28   EXPIRED        2018-12-28        P   252.5      -4.585  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-15 00:00:00
+[rundata]##### Stock Price (close): 273.02 iv-close: 0.1741751
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 69.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-15  NYSEArca        2018-12-31        C   285.0       1.535  0.204991
+2018-11-15  NYSEArca        2018-12-31        P   257.0       2.365 -0.197448
+2018-12-31   EXPIRED        2018-12-31        C   285.0      -0.000  0.000000
+2018-12-31   EXPIRED        2018-12-31        P   257.0      -6.795  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-19 00:00:00
+[rundata]##### Stock Price (close): 269.1 iv-close: 0.18103289
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 74.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-19  NYSEArca        2018-12-31        C   281.0       1.445  0.199328
+2018-11-19  NYSEArca        2018-12-31        P   254.0       2.295 -0.201177
+2018-12-31   EXPIRED        2018-12-31        C   281.0      -0.000  0.000000
+2018-12-31   EXPIRED        2018-12-31        P   254.0      -3.690  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-20 00:00:00
+[rundata]##### Stock Price (close): 264.12 iv-close: 0.19911395
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 87.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-20  NYSEArca        2018-12-31        C   276.0       1.600  0.205092
+2018-11-20  NYSEArca        2018-12-31        P   248.0       2.505 -0.205923
+2018-12-31   EXPIRED        2018-12-31        C   276.0      -0.000  0.000000
+2018-12-31   EXPIRED        2018-12-31        P   248.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-21 00:00:00
+[rundata]##### Stock Price (close): 265.02 iv-close: 0.18350931
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 76.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-21  NYSEArca        2019-01-04        C   277.0       1.450  0.193791
+2018-11-21  NYSEArca        2019-01-04        P   247.5       2.195 -0.185937
+2019-01-04   EXPIRED        2019-01-04        C   277.0      -0.000  0.000000
+2019-01-04   EXPIRED        2019-01-04        P   247.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-23 00:00:00
+[rundata]##### Stock Price (close): 263.25 iv-close: 0.18924001
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 80.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-23  NYSEArca        2019-01-04        C   275.0       1.545  0.202748
+2018-11-23  NYSEArca        2019-01-04        P   247.5       2.520 -0.208471
+2019-01-04   EXPIRED        2019-01-04        C   275.0      -0.000  0.000000
+2019-01-04   EXPIRED        2019-01-04        P   247.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-26 00:00:00
+[rundata]##### Stock Price (close): 267.5 iv-close: 0.16653946
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 62.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-26  NYSEArca        2019-01-04        C   277.5       1.340  0.197704
+2018-11-26  NYSEArca        2019-01-04        P   252.5       2.055 -0.199287
+2019-01-04   EXPIRED        2019-01-04        C   277.5      -0.000  0.000000
+2019-01-04   EXPIRED        2019-01-04        P   252.5      -0.280  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-27 00:00:00
+[rundata]##### Stock Price (close): 268.4 iv-close: 0.16679345
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 63.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-27  NYSEArca        2019-01-04        C   279.0        1.37  0.200014
+2018-11-27  NYSEArca        2019-01-04        P   254.0        2.03 -0.198093
+2019-01-04   EXPIRED        2019-01-04        C   279.0       -0.00  0.000000
+2019-01-04   EXPIRED        2019-01-04        P   254.0       -1.69  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-11-29 00:00:00
+[rundata]##### Stock Price (close): 273.98 iv-close: 0.16652359
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 62.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-11-29  NYSEArca        2019-01-11        C   286.0       1.365  0.191502
+2018-11-29  NYSEArca        2019-01-11        P   260.0       2.410 -0.213931
+2019-01-11   EXPIRED        2019-01-11        C   286.0      -0.000  0.000000
+2019-01-11   EXPIRED        2019-01-11        P   260.0      -1.390  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-04 00:00:00
+[rundata]##### Stock Price (close): 270.25 iv-close: 0.18246159
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 74.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-04  NYSEArca        2019-01-18        C   282.0       1.660  0.209797
+2018-12-04  NYSEArca        2019-01-18        P   253.0       2.455 -0.196586
+2019-01-18   EXPIRED        2019-01-18        C   282.0      -0.000  0.000000
+2019-01-18   EXPIRED        2019-01-18        P   253.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-06 00:00:00
+[rundata]##### Stock Price (close): 269.84 iv-close: 0.18419191
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 75.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-06  NYSEArca        2019-01-18        C   282.0       1.475  0.191102
+2018-12-06  NYSEArca        2019-01-18        P   252.0       2.500 -0.198017
+2019-01-18   EXPIRED        2019-01-18        C   282.0      -0.000  0.000000
+2019-01-18   EXPIRED        2019-01-18        P   252.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-07 00:00:00
+[rundata]##### Stock Price (close): 263.57 iv-close: 0.20762269
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 93.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-07  NYSEArca        2019-01-18        C   277.0        1.71  0.200847
+2018-12-07  NYSEArca        2019-01-18        P   246.0        2.74 -0.204398
+2019-01-18   EXPIRED        2019-01-18        C   277.0       -0.00  0.000000
+2019-01-18   EXPIRED        2019-01-18        P   246.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-10 00:00:00
+[rundata]##### Stock Price (close): 264.07 iv-close: 0.19719314
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 85.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-10  NYSEArca        2019-01-25        C   278.0       1.675  0.198417
+2018-12-10  NYSEArca        2019-01-25        P   247.5       2.835 -0.210648
+2019-01-25   EXPIRED        2019-01-25        C   278.0      -0.000  0.000000
+2019-01-25   EXPIRED        2019-01-25        P   247.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-11 00:00:00
+[rundata]##### Stock Price (close): 264.13 iv-close: 0.19265303
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 82.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-11  NYSEArca        2019-01-25        C   277.5        1.62  0.196914
+2018-12-11  NYSEArca        2019-01-25        P   247.5        2.67 -0.207059
+2019-01-25   EXPIRED        2019-01-25        C   277.5       -0.00  0.000000
+2019-01-25   EXPIRED        2019-01-25        P   247.5       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-12 00:00:00
+[rundata]##### Stock Price (close): 265.46 iv-close: 0.18708108
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 77.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-12  NYSEArca        2019-01-25        C   278.0       1.675  0.203994
+2018-12-12  NYSEArca        2019-01-25        P   247.5       2.365 -0.189769
+2019-01-25   EXPIRED        2019-01-25        C   278.0      -0.000  0.000000
+2019-01-25   EXPIRED        2019-01-25        P   247.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-13 00:00:00
+[rundata]##### Stock Price (close): 265.37 iv-close: 0.17935019
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 71.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-13  NYSEArca        2019-01-25        C   277.0       1.620  0.202457
+2018-12-13  NYSEArca        2019-01-25        P   247.5       2.255 -0.189804
+2019-01-25   EXPIRED        2019-01-25        C   277.0      -0.000  0.000000
+2019-01-25   EXPIRED        2019-01-25        P   247.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-14 00:00:00
+[rundata]##### Stock Price (close): 260.47 iv-close: 0.18920826
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 76.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-14  NYSEArca        2019-01-25        C   273.0       1.655  0.203018
+2018-12-14  NYSEArca        2019-01-25        P   245.0       2.545 -0.211685
+2019-01-25   EXPIRED        2019-01-25        C   273.0      -0.000  0.000000
+2019-01-25   EXPIRED        2019-01-25        P   245.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-17 00:00:00
+[rundata]##### Stock Price (close): 255.36 iv-close: 0.21762363
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-17  NYSEArca        2019-02-01        C   270.0       1.770  0.198302
+2018-12-17  NYSEArca        2019-02-01        P   237.5       2.655 -0.198147
+2019-02-01   EXPIRED        2019-02-01        C   270.0      -0.155  0.000000
+2019-02-01   EXPIRED        2019-02-01        P   237.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-18 00:00:00
+[rundata]##### Stock Price (close): 255.08 iv-close: 0.21995718
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-18  NYSEArca        2019-02-01        C   268.0       1.915  0.207410
+2018-12-18  NYSEArca        2019-02-01        P   235.0       2.590 -0.191702
+2019-02-01   EXPIRED        2019-02-01        C   268.0      -2.440  0.000000
+2019-02-01   EXPIRED        2019-02-01        P   235.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2018-12-19 00:00:00
+[rundata]##### Stock Price (close): 251.26 iv-close: 0.21503608
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 95.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2018-12-19  NYSEArca        2019-02-01        C   265.0       1.655  0.192204
+2018-12-19  NYSEArca        2019-02-01        P   232.5       2.520 -0.192726
+2019-02-01   EXPIRED        2019-02-01        C   265.0      -4.585  0.000000
+2019-02-01   EXPIRED        2019-02-01        P   232.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-03-22 00:00:00
+[rundata]##### Stock Price (close): 279.25 iv-close: 0.15715763
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 74.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-03-22  NYSEArca        2019-05-03        C   290.0       1.295  0.208466
+2019-03-22  NYSEArca        2019-05-03        P   267.0       2.035 -0.204415
+2019-05-03   EXPIRED        2019-05-03        C   290.0      -4.210  0.000000
+2019-05-03   EXPIRED        2019-05-03        P   267.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-03-25 00:00:00
+[rundata]##### Stock Price (close): 279.04 iv-close: 0.1564909
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 73.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-03-25  NYSEArca        2019-05-03        C   290.0       1.130  0.192289
+2019-03-25  NYSEArca        2019-05-03        P   267.0       1.925 -0.201660
+2019-05-03   EXPIRED        2019-05-03        C   290.0      -4.210  0.000000
+2019-05-03   EXPIRED        2019-05-03        P   267.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-03-27 00:00:00
+[rundata]##### Stock Price (close): 279.65 iv-close: 0.15107769
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 65.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-03-27  NYSEArca        2019-05-17        C   291.0       1.305  0.202797
+2019-03-27  NYSEArca        2019-05-17        P   266.0       2.060 -0.196602
+2019-05-17   EXPIRED        2019-05-17        C   291.0      -0.000  0.000000
+2019-05-17   EXPIRED        2019-05-17        P   266.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-07 00:00:00
+[rundata]##### Stock Price (close): 287.93 iv-close: 0.17095258
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-07  NYSEArca        2019-06-21        C   300.0       1.365  0.198389
+2019-05-07  NYSEArca        2019-06-21        P   272.0       2.640 -0.204693
+2019-06-21   EXPIRED        2019-06-21        C   300.0      -0.000  0.000000
+2019-06-21   EXPIRED        2019-06-21        P   272.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-08 00:00:00
+[rundata]##### Stock Price (close): 287.53 iv-close: 0.16811104
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 96.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-08  NYSEArca        2019-06-21        C   299.0       1.365  0.203192
+2019-05-08  NYSEArca        2019-06-21        P   271.0       2.550 -0.198209
+2019-06-21   EXPIRED        2019-06-21        C   299.0      -0.000  0.000000
+2019-06-21   EXPIRED        2019-06-21        P   271.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-09 00:00:00
+[rundata]##### Stock Price (close): 286.66 iv-close: 0.16623785
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 94.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-09  NYSEArca        2019-06-21        C   298.0        1.24  0.190631
+2019-05-09  NYSEArca        2019-06-21        P   270.0        2.48 -0.198019
+2019-06-21   EXPIRED        2019-06-21        C   298.0       -0.00  0.000000
+2019-06-21   EXPIRED        2019-06-21        P   270.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-13 00:00:00
+[rundata]##### Stock Price (close): 280.86 iv-close: 0.17795323
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-13  NYSEArca        2019-06-28        C   292.0       1.545  0.205984
+2019-05-13  NYSEArca        2019-06-28        P   263.0       2.760 -0.205104
+2019-06-28   EXPIRED        2019-06-28        C   292.0      -2.185  0.000000
+2019-06-28   EXPIRED        2019-06-28        P   263.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-14 00:00:00
+[rundata]##### Stock Price (close): 283.4 iv-close: 0.16036428
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 78.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-14  NYSEArca        2019-06-28        C   294.0       1.370  0.204715
+2019-05-14  NYSEArca        2019-06-28        P   267.0       2.380 -0.196413
+2019-06-28   EXPIRED        2019-06-28        C   294.0      -0.195  0.000000
+2019-06-28   EXPIRED        2019-06-28        P   267.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-23 00:00:00
+[rundata]##### Stock Price (close): 282.14 iv-close: 0.15053796
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 66.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-23  NYSEArca        2019-07-05        C   292.0       1.240  0.193640
+2019-05-23  NYSEArca        2019-07-05        P   267.5       2.365 -0.212771
+2019-07-05   EXPIRED        2019-07-05        C   292.0      -6.280  0.000000
+2019-07-05   EXPIRED        2019-07-05        P   267.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-28 00:00:00
+[rundata]##### Stock Price (close): 280.15 iv-close: 0.15741162
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 75.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-28  NYSEArca        2019-07-05        C   290.0       1.305  0.203578
+2019-05-28  NYSEArca        2019-07-05        P   266.0       2.140 -0.203193
+2019-07-05   EXPIRED        2019-07-05        C   290.0      -8.265  0.000000
+2019-07-05   EXPIRED        2019-07-05        P   266.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-29 00:00:00
+[rundata]##### Stock Price (close): 278.27 iv-close: 0.16285658
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 81.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-29  NYSEArca        2019-07-19        C   290.0       1.390  0.190672
+2019-05-29  NYSEArca        2019-07-19        P   262.0       2.490 -0.205965
+2019-07-19   EXPIRED        2019-07-19        C   290.0      -6.875  0.000000
+2019-07-19   EXPIRED        2019-07-19        P   262.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-30 00:00:00
+[rundata]##### Stock Price (close): 279.03 iv-close: 0.15998329
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 78.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-30  NYSEArca        2019-07-12        C   290.0       1.235  0.186845
+2019-05-30  NYSEArca        2019-07-12        P   264.0       2.160 -0.199580
+2019-07-12   EXPIRED        2019-07-12        C   290.0     -10.465  0.000000
+2019-07-12   EXPIRED        2019-07-12        P   264.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-05-31 00:00:00
+[rundata]##### Stock Price (close): 275.27 iv-close: 0.17395286
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 95.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-05-31  NYSEArca        2019-07-12        C   286.0       1.505  0.206861
+2019-05-31  NYSEArca        2019-07-12        P   260.0       2.280 -0.203288
+2019-07-12   EXPIRED        2019-07-12        C   286.0     -14.505  0.000000
+2019-07-12   EXPIRED        2019-07-12        P   260.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-06-03 00:00:00
+[rundata]##### Stock Price (close): 274.57 iv-close: 0.17701664
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 99.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-06-03  NYSEArca        2019-07-19        C   287.0       1.360  0.188423
+2019-06-03  NYSEArca        2019-07-19        P   259.0       2.285 -0.197932
+2019-07-19   EXPIRED        2019-07-19        C   287.0      -9.820  0.000000
+2019-07-19   EXPIRED        2019-07-19        P   259.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-06-04 00:00:00
+[rundata]##### Stock Price (close): 280.53 iv-close: 0.15668139
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 74.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-06-04  NYSEArca        2019-07-19        C   291.0       1.370  0.200907
+2019-06-04  NYSEArca        2019-07-19        P   266.0       2.170 -0.203253
+2019-07-19   EXPIRED        2019-07-19        C   291.0      -5.875  0.000000
+2019-07-19   EXPIRED        2019-07-19        P   266.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-06-05 00:00:00
+[rundata]##### Stock Price (close): 282.96 iv-close: 0.14698207
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 62.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-06-05  NYSEArca        2019-07-19        C   293.0       1.255  0.193917
+2019-06-05  NYSEArca        2019-07-19        P   269.0       2.085 -0.205569
+2019-07-19   EXPIRED        2019-07-19        C   293.0      -3.905  0.000000
+2019-07-19   EXPIRED        2019-07-19        P   269.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-01 00:00:00
+[rundata]##### Stock Price (close): 294.84 iv-close: 0.15361761
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 71.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-01  NYSEArca        2019-09-13        C   305.0        1.46  0.219240
+2019-08-01  NYSEArca        2019-09-13        P   280.0        2.41 -0.206634
+2019-09-13   EXPIRED        2019-09-13        C   305.0       -0.00  0.000000
+2019-09-13   EXPIRED        2019-09-13        P   280.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-02 00:00:00
+[rundata]##### Stock Price (close): 292.62 iv-close: 0.15622103
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 74.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-02  NYSEArca        2019-09-13        C   302.5       1.595  0.233856
+2019-08-02  NYSEArca        2019-09-13        P   277.5       2.255 -0.197008
+2019-09-13   EXPIRED        2019-09-13        C   302.5      -0.000  0.000000
+2019-09-13   EXPIRED        2019-09-13        P   277.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-05 00:00:00
+[rundata]##### Stock Price (close): 283.82 iv-close: 0.20722583
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 100.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-05  NYSEArca        2019-09-20        C   297.0       1.905  0.208305
+2019-08-05  NYSEArca        2019-09-20        P   262.0       3.325 -0.203957
+2019-09-20   EXPIRED        2019-09-20        C   297.0      -0.895  0.000000
+2019-09-20   EXPIRED        2019-09-20        P   262.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-06 00:00:00
+[rundata]##### Stock Price (close): 287.8 iv-close: 0.17569905
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 71.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-06  NYSEArca        2019-09-20        C   299.0        1.64  0.212589
+2019-08-06  NYSEArca        2019-09-20        P   269.0        2.82 -0.201422
+2019-09-20   EXPIRED        2019-09-20        C   299.0       -0.00  0.000000
+2019-09-20   EXPIRED        2019-09-20        P   269.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-07 00:00:00
+[rundata]##### Stock Price (close): 287.97 iv-close: 0.16939687
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 66.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-07  NYSEArca        2019-09-20        C   299.0        1.59  0.212703
+2019-08-07  NYSEArca        2019-09-20        P   270.0        2.81 -0.204524
+2019-09-20   EXPIRED        2019-09-20        C   299.0       -0.00  0.000000
+2019-09-20   EXPIRED        2019-09-20        P   270.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-12 00:00:00
+[rundata]##### Stock Price (close): 288.07 iv-close: 0.18093764
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 76.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-12  NYSEArca        2019-09-27        C   300.0       1.685  0.208551
+2019-08-12  NYSEArca        2019-09-27        P   267.5       2.865 -0.193728
+2019-09-27   EXPIRED        2019-09-27        C   300.0      -0.000  0.000000
+2019-09-27   EXPIRED        2019-09-27        P   267.5      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-14 00:00:00
+[rundata]##### Stock Price (close): 283.9 iv-close: 0.20386043
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 97.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-14  NYSEArca        2019-09-27        C   297.0        1.70  0.202601
+2019-08-14  NYSEArca        2019-09-27        P   265.0        3.05 -0.207062
+2019-09-27   EXPIRED        2019-09-27        C   297.0       -0.00  0.000000
+2019-09-27   EXPIRED        2019-09-27        P   265.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-15 00:00:00
+[rundata]##### Stock Price (close): 284.65 iv-close: 0.19255778
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 87.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-15  NYSEArca        2019-09-30        C   298.0       1.520  0.190068
+2019-08-15  NYSEArca        2019-09-30        P   265.0       2.815 -0.195805
+2019-09-30   EXPIRED        2019-09-30        C   298.0      -0.015  0.000000
+2019-09-30   EXPIRED        2019-09-30        P   265.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-23 00:00:00
+[rundata]##### Stock Price (close): 284.85 iv-close: 0.19281177
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 87.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-23  NYSEArca        2019-10-04        C   297.0        1.51  0.201511
+2019-08-23  NYSEArca        2019-10-04        P   267.5        2.62 -0.199064
+2019-10-04   EXPIRED        2019-10-04        C   297.0       -0.00  0.000000
+2019-10-04   EXPIRED        2019-10-04        P   267.5       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-26 00:00:00
+[rundata]##### Stock Price (close): 288.0 iv-close: 0.17684202
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 72.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-26  NYSEArca        2019-10-04        C   299.0       1.355  0.195974
+2019-08-26  NYSEArca        2019-10-04        P   271.0       2.515 -0.200349
+2019-10-04   EXPIRED        2019-10-04        C   299.0      -0.000  0.000000
+2019-10-04   EXPIRED        2019-10-04        P   271.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-27 00:00:00
+[rundata]##### Stock Price (close): 286.87 iv-close: 0.18381093
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 79.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-27  NYSEArca        2019-10-04        C   297.5       1.445  0.200323
+2019-08-27  NYSEArca        2019-10-04        P   269.0       2.590 -0.201277
+2019-10-04   EXPIRED        2019-10-04        C   297.5      -0.000  0.000000
+2019-10-04   EXPIRED        2019-10-04        P   269.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-08-28 00:00:00
+[rundata]##### Stock Price (close): 288.89 iv-close: 0.17355599
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 69.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-08-28  NYSEArca        2019-10-18        C   301.0       1.620  0.203799
+2019-08-28  NYSEArca        2019-10-18        P   269.0       2.815 -0.195046
+2019-10-18   EXPIRED        2019-10-18        C   301.0      -0.000  0.000000
+2019-10-18   EXPIRED        2019-10-18        P   269.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-09-03 00:00:00
+[rundata]##### Stock Price (close): 290.74 iv-close: 0.17114307
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 67.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-09-03  NYSEArca        2019-10-18        C   302.0       1.375  0.192020
+2019-09-03  NYSEArca        2019-10-18        P   272.0       2.785 -0.201787
+2019-10-18   EXPIRED        2019-10-18        C   302.0      -0.000  0.000000
+2019-10-18   EXPIRED        2019-10-18        P   272.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-10-02 00:00:00
+[rundata]##### Stock Price (close): 288.06 iv-close: 0.18877965
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 83.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-10-02  NYSEArca        2019-11-15        C   301.0        1.49  0.193299
+2019-10-02  NYSEArca        2019-11-15        P   270.0        2.82 -0.204634
+2019-11-15   EXPIRED        2019-11-15        C   301.0      -10.83  0.000000
+2019-11-15   EXPIRED        2019-11-15        P   270.0       -0.00  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-10-03 00:00:00
+[rundata]##### Stock Price (close): 290.42 iv-close: 0.17555618
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 71.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-10-03  NYSEArca        2019-11-15        C   303.0       1.340  0.191349
+2019-10-03  NYSEArca        2019-11-15        P   274.0       2.655 -0.204358
+2019-11-15   EXPIRED        2019-11-15        C   303.0      -8.755  0.000000
+2019-11-15   EXPIRED        2019-11-15        P   274.0      -0.000  0.000000 
+
+
+[rundata]###################################################################
+[rundata]##### Date: 2019-10-08 00:00:00
+[rundata]##### Stock Price (close): 288.53 iv-close: 0.1848269
+[rundata]##### Open Trade. Trigger: iv-close-Rank50 value: 77.0
+[rundata]Contract(s):
+             exchange option_expiration call_put  strike  mean_price     delta
+date                                                                         
+2019-10-08  NYSEArca        2019-11-22        C   302.0        1.41  0.190324
+2019-10-08  NYSEArca        2019-11-22        P   271.0        2.85 -0.203846
+2019-11-22   EXPIRED        2019-11-22        C   302.0       -9.18  0.000000
+2019-11-22   EXPIRED        2019-11-22        P   271.0       -0.00  0.000000 
+
+
+[main]clean up and exit
