@@ -19,13 +19,7 @@ f = open('logging.log', 'w')
 f.write('')
 f.close()
 
-# helpers
-def showMe(*text):
-	msg = '[{}]'.format(sys._getframe(1).f_code.co_name) + ' '.join([str(elem) for elem in text])
-	f = open('logging.log', 'a')
-	f.write(msg + '\n')
-	f.close()
-	print(msg)
+
 def fixdata(df):
 	missingData = len(df[df.isna()].index)
 	if missingData == 0: return
