@@ -1,0 +1,21 @@
+# import
+
+# start script
+showMe('starting script', id)
+
+# load bigdata
+if stock is None: loadstock()
+#if option is None: loadoption()
+
+# build indicator
+ind = pd.DataFrame([], index=pd.DatetimeIndex(stock.index))
+ind['MA20'] = indicator.getMA(stock['close'], window=20)
+ind['MA50'] = indicator.getMA(stock['close'], window=50)
+ind['ivrank50'] = indicator.getRank(stock['iv-close'], window=50)
+
+# create portfolio
+pf = portfolio(value=100000, startdate='2007-01-01', enddate='2008-01-01')
+
+
+# end script
+showMe('ending script', id)

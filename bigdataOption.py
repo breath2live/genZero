@@ -29,7 +29,7 @@ def loadStock(path, stockfile, ivfile):
 	#showMe(stock[stock.isnull()['iv-open'] == True])
 
 	# cut stock data
-	return stock.loc[stock.index >= '2007-01-01']
+	return stock
 def fixdata(df):
 	missingData = len(df[df.isna()].index)
 	if missingData == 0: return

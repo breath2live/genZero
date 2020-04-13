@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 import bigdataOption
+import copy
 
 # project related
 from helper import showMe
@@ -43,7 +44,7 @@ class portfolio():
 		return new
 
 	def addStrategy(self, strategy :strategy):
-		#### DEV create copy of object
+		strategy = copy.deepcopy(strategy)
 		strategy.linkpf(self)
 		self.strategy.append(strategy)
 		return len(self.strategy)-1

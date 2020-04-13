@@ -1,6 +1,14 @@
 import pandas as pd
 import numpy as np
 
+"""
+trigger:
+	newWeek
+	newMonth
+	newYear
+
+"""
+
 class strategy():
 	# shared
 	ids = []
