@@ -45,7 +45,6 @@ def main():
 	# add indicators and others
 	showMe('add Indicators')
 	addIndicator()
-	###########
 
 
 
@@ -53,7 +52,7 @@ def main():
 
 
 
-	###########
+
 	# clean up and exit
 	showMe('clean up and exit')
 	###
