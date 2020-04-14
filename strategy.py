@@ -11,7 +11,7 @@ trigger:
 
 class strategy():
 	# shared
-	ids = []
+	#ids = []
 
 	# unshared
 	trigger = pd.DataFrame([], index=[], columns=['condition', 'trade'])
@@ -23,13 +23,8 @@ class strategy():
 			self.name = 'strategy-' + str(id)
 			self.portfolio = None
 
-	def __init__(self):
-		self.metadata = self.metadata(self._newid())
-
-	def _newid(self):
-		new = len(self.ids)
-		self.ids.append(new)
-		return new
+	def __init__(self, id):
+		self.metadata = self.metadata(id)
 
 	def linkpf(self, pf):
 		self.portfolio = pf

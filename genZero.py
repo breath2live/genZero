@@ -10,10 +10,8 @@ import datetime as dt
 import matplotlib.pyplot as plt
 import seaborn as sns
 import bigdataOption
-from helper import showMe
+from helper import showMe, getnextid
 import sys
-import yaml
-
 
 # define and start ups
 stock = None
@@ -53,7 +51,7 @@ def run():
 			elif inp[0] in ['file', 'f']:
 				help = '\nfile\n->  <path/file.py>\n'
 				if len(inp) > 1:
-					runningFile.append(process(loadfile, inp[1], getnextscriptid()).start())
+					runningFile.append(process(loadfile, inp[1], getnextid('script')).start())
 				else:
 					showMe(help)
 			elif inp[0] in ['option', 'o']:
@@ -75,30 +73,6 @@ def workflow():
 	# clean up and exit
 	showMe('clean up and exit')
 	###
-def readyaml():
-	try:
-		with open(r'genZero.yaml') as file:
-			return yaml.load(file, Loader=yaml.FullLoader)
-	except OSError as err:
-		showMe(err)
-		showMe('creating new yaml')
-		return createyaml()
-def writeyaml(value):
-	try:
-		with open(r'genZero.yaml', 'w') as file:
-			return yaml.dump(value, file)
-	except OSError as err:
-		showMe(err)
-		return 1
-def createyaml():
-	yaml = { 'id': {'script':0, 'portfolio':0, 'strategy':0, 'trade':0} }
-	writeyaml(yaml)
-	return yaml
-def getnextscriptid():
-	doc = readyaml()
-	doc['id']['script'] +=1
-	writeyaml(doc)
-	return doc['id']['script']
 
 
 

@@ -14,7 +14,8 @@ ind['MA50'] = indicator.getMA(stock['close'], window=50)
 ind['ivrank50'] = indicator.getRank(stock['iv-close'], window=50)
 
 # create portfolio
-pf = portfolio(value=100000, startdate='2007-01-01', enddate='2008-01-01')
+pf = portfolio(getnextid('portfolio'), value=100000, startdate='2007-01-01', enddate='2008-01-01')
+
 
 
 # end script

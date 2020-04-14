@@ -26,12 +26,12 @@ class portfolio():
 	trades = _trades.copy()
 
 	# def var
-	ids = []
+	#
 
 
 	# method
-	def __init__(self, value=100000, startdate='2007-01-01', enddate='2020-04-01'):
-		self.metadata = self.metadata(self._newid())
+	def __init__(self, id, value=100000, startdate='2007-01-01', enddate='2020-04-01'):
+		self.metadata = self.metadata(id)
 		self.startdate = pd.to_datetime(startdate)
 		self.enddate = pd.to_datetime(enddate)
 		self.prevdate = self.startdate
