@@ -21,7 +21,7 @@ def writeyaml(value):
 		showMe(err)
 		return 1
 def createyaml():
-	yaml = { 'id': {'script':0, 'portfolio':0, 'strategy':0, 'trade':0} }
+	yaml = { 'id': {'script':0, 'portfolio':0, 'strategy':0, 'trade':0, 'position':0} }
 	writeyaml(yaml)
 	return yaml
 def getnextid(kind):
@@ -36,6 +36,9 @@ def getnextid(kind):
 	elif v == 'strategy':
 		doc['id']['strategy'] +=1
 		res = doc['id']['strategy']
+	elif v == 'position':
+		doc['id']['position'] +=1
+		res = doc['id']['position']
 	else:
 		res = None
 	writeyaml(doc)

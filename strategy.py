@@ -23,6 +23,8 @@ class strategy():
 			self.id = id
 			self.name = 'strategy-' + str(id)
 			self.portfolio = None
+			self.maxpositions = None
+			self.maxtrades = None
 
 	def __init__(self):
 		self.metadata = self.metadata(getnextid('strategy'))
@@ -34,6 +36,7 @@ class strategy():
 		self.currentyear = None
 		self.currentmonth = None
 		self.currentweek = None
+		self.openposition = []
 
 	def setStock(self, stock):
 		self.stock = stock
@@ -77,8 +80,6 @@ class strategy():
 		if self.indicator is not None:
 			if column in self.indicator.columns:
 				return self.indicator.loc[self.date][column]
-
-
 
 
 
