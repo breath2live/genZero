@@ -1,5 +1,6 @@
 # includes
 from manager.process import process
+from threading import Timer
 
 import pandas as pd
 import numpy as np
@@ -36,6 +37,10 @@ def loadoption():
 def run():
 	global idcnt
 	showMe('setup...')
+	### DEV
+	runningFile.append(process(loadfile, 'script', getnextid('script')).start())
+	Timer(20, sys.exit(1)).start()
+	###
 	showMe('ready for inputs')
 	while True:
 		inp = input('').split()

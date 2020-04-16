@@ -1,14 +1,8 @@
 import pandas as pd
 import numpy as np
+import datetime
 from helper import showMe, getnextid
 
-"""
-trigger:
-	newWeek
-	newMonth
-	newYear
-
-"""
 
 class strategy():
 	# shared
@@ -16,8 +10,9 @@ class strategy():
 
 	# unshared
 	trigger = pd.DataFrame([], index=[], columns=['condition'])
+	execute = pd.DataFrame([], index=[], columns=['command'])
 
-
+	# init and metadata
 	class metadata():
 		def __init__(self, id):
 			self.id = id
@@ -25,7 +20,6 @@ class strategy():
 			self.portfolio = None
 			self.maxpositions = None
 			self.maxtrades = None
-
 	def __init__(self):
 		self.metadata = self.metadata(getnextid('strategy'))
 		self.date = None
@@ -36,8 +30,12 @@ class strategy():
 		self.currentyear = None
 		self.currentmonth = None
 		self.currentweek = None
+		self.starttime = None
+		self.endtime = None
 		self.openposition = []
 
+
+	# set methods
 	def setStock(self, stock):
 		self.stock = stock
 	def setOption(self, option):
@@ -47,19 +45,7 @@ class strategy():
 	def setPortfolio(self, pf):
 		self.metadata.portfolio = pf
 
-	def addTrigger(self, name, condition):
-		self.trigger = self.trigger.append(pd.DataFrame( [[condition]], index=[name], columns=self.trigger.columns))
-
-	def checkTriggers(self):
-		res = []
-		for cmd in self.trigger['condition']: exec('res.append({})'.format(cmd))
-		return False not in res
-
-	def execStrategy(self):
-		# add trades, legs
-		showMe(self.metadata.name, self.date)
-
-
+	# helpers for trigger
 	def newWeek(self):
 		if self.date.weekofyear != self.currentweek:
 			self.currentweek = self.date.weekofyear
@@ -76,17 +62,34 @@ class strategy():
 			return True
 		return False
 
+	# adder methods
+	def addTrigger(self, name, condition):
+		self.trigger = self.trigger.append(pd.DataFrame( [[condition]], index=[name], columns=self.trigger.columns))
+	def addExecution(self, name, command):
+		self.execute = self.execute.append(pd.DataFrame( [command], index=[name], columns=self.execute.columns))
+
+	# various methos
+	def checkTriggers(self):
+		res = []
+		for cmd in self.trigger['condition']: exec('res.append({})'.format(cmd))
+		return False not in res
+	def execStrategy(self):
+		for cmd in self.execute['command']: exec(cmd)
 	def indicatorData(self, column):
 		if self.indicator is not None:
 			if column in self.indicator.columns:
 				return self.indicator.loc[self.date][column]
+	def doneStrategy(self):
+		showMe('duration of strategy:', self.endtime - self.starttime)
 
-
-
+	# runner methods
 	def runDates(self, startdate='2007-01-01', enddate='2020-01-01'):
 		self.prevdate = startdate
+		self.starttime = datetime.datetime.now()
 		for date in self.stock.loc[(self.stock.index >= startdate) & (self.stock.index < enddate)].index:
 			self.runDate(date)
+		self.endtime = datetime.datetime.now()
+		self.doneStrategy()
 	def runDate(self, date):
 		self.date = date
 		if self.checkTriggers(): self.execStrategy()
