@@ -1,0 +1,164 @@
+import pandas as pd
+import numpy as np
+import datetime as dt
+import bigdataOption
+import sys
+
+
+def showMe(*text):
+	msg = '[{}]'.format(sys._getframe(1).f_code.co_name) + ' '.join([str(elem) for elem in text])
+	print(msg)
+
+# from portfolio import portfolio as pf
+class portfolio():
+	# class
+	class metadata():
+		def __init__(self):
+			self.name = 'pf-{}'.format(np.random.randint(10**10,10**11))
+			self.maxposition = 10
+			self.maxcushion = 0.8
+
+		def reset_portfolio(self, value):
+			pass
+
+
+	# def DF
+	_portfolio = pd.DataFrame([], index=pd.DatetimeIndex(data=[], name='date'), columns=['NLV', 'cash', 'margin', 'unreal', 'real'])
+	_position = pd.DataFrame([], index=pd.DatetimeIndex(data=[], name='date'), columns=['contract', 'side', 'quantity', 'value', 'avgPrice'])
+	_trades = pd.DataFrame([], index=pd.DatetimeIndex(data=[], name='date'), columns=['contract', 'side', 'quantity', 'avgPrice'])
+	portfolio = _portfolio.copy()
+	position = _position.copy()
+	trades = _trades.copy()
+
+	# def var
+	#prevdate = None
+
+	# method
+	def __init__(self, value=100000, startdate='2007-01-01', enddate='2020-04-01'):
+		self.metadata = self.metadata()
+		self.startdate = pd.to_datetime(startdate)
+		self.enddate = pd.to_datetime(enddate)
+		self.prevdate = self.startdate
+		self.name = 'pf-{}'.format(np.random.randint(10**10,10**11))
+		self.addPortfolio(startdate, value, value, 0, 0, 0)
+	def addPosition(self, date, contract, side, quantity, avgPrice, value=None):
+		#contract = ' '.join([str(elem) for elem in contract])
+		if value == None: value = side*avgPrice*quantity
+		self.position = self.position.append(pd.DataFrame( [[contract, side, quantity, value, avgPrice]], index=pd.DatetimeIndex([pd.to_datetime(date)], name='date'), columns=self.position.columns))
+	def addTrade(self, date, contract, side, quantity, avgPrice):
+		#contract = ' '.join([str(elem) for elem in contract])
+		self.trades = self.trades.append(pd.DataFrame( [[contract, side, quantity, avgPrice]], index=pd.DatetimeIndex([pd.to_datetime(date)], name='date'), columns=self.trades.columns))
+	def addPortfolio(self, date, nlv, cash, margin, unreal, real):
+		self.portfolio = self.portfolio.append(pd.DataFrame( [[nlv, cash, margin, unreal, real]], index=pd.DatetimeIndex([pd.to_datetime(date)], name='date'), columns=self.portfolio.columns))
+	def addPositionFromTrade(self, df, values=False):
+		if not values: df['value'] = df['side']*df['quantity']*df['avgPrice']
+		self.position = self.position.append(df)
+	def updatePosition(self, date, stock, option):
+		newTrades = self._trades.copy()
+		prevPos = self._position.copy()
+		if self.prevdate in self.position.index: prevPos = prevPos.append(self.position.loc[self.prevdate])
+		if date in self.trades.index: newTrades = newTrades.append(self.trades.loc[[date]])
+
+		#print('newTrades', len(newTrades))
+		#print('prevPos', len(prevPos))
+
+		if len(newTrades) != 0:
+			# newTrades and prevPos avail., add missing trades to pos, delete expired
+			#print('newTrades and prevPos')
+			for tradeidx in range(0, len(newTrades)):
+				con = newTrades.iloc[tradeidx]['contract']
+				side = newTrades.iloc[tradeidx]['side']
+				qnt = newTrades.iloc[tradeidx]['quantity']
+				avg = newTrades.iloc[tradeidx]['avgPrice']
+
+				if newTrades['contract'].iloc[tradeidx] not in prevPos['contract'].values:
+					# add to position
+					#print('add position')
+					prevPos = prevPos.append(pd.DataFrame([[con, side, qnt, 0, avg]], columns=prevPos.columns))
+					self.addPortfolio(date, 0, -side*qnt*avg*100, 0, 0, 0)
+				else:
+					# modify position (mod / del)
+					#print('mod / del position')
+					tmp = prevPos[prevPos['contract'] == con]
+					pos_con = tmp['contract'][0]
+					pos_side = tmp['side'][0]
+					pos_qnt = tmp['quantity'][0]
+					pos_avg = tmp['avgPrice'][0]
+
+					merge_qnt = side*qnt + pos_side*pos_qnt
+					if merge_qnt != 0:
+						merge_side = merge_qnt/abs(merge_qnt)
+						merge_qnt = abs(merge_qnt)
+						merge_avg = (pos_qnt*pos_avg + qnt*avg)/merge_qnt
+
+					if merge_qnt > 0:
+						# mod
+						# prevPos[prevPos['contract'] == con] = pd.DataFrame([[con, merge_side, merge_qnt, 0, merge_avg]], columns=prevPos.columns)
+						prevPos.loc[prevPos['contract'] == con, 'side'] = merge_side
+						prevPos.loc[prevPos['contract'] == con, 'quantity'] = merge_qnt
+						prevPos.loc[prevPos['contract'] == con, 'avgPrice'] = merge_avg
+						real = 0
+						if merge_side != pos_side: real = -(side*qnt*avg+pos_side*pos_qnt*pos_avg)*100
+						self.addPortfolio(date, 0, -side*qnt*avg*100, 0, 0, real)
+					else:
+						# del
+						prevPos = prevPos[prevPos['contract'] != con]
+						self.addPortfolio(date, 0, -side*qnt*avg*100, 0, 0, -(side*qnt*avg+pos_side*pos_qnt*pos_avg)*100)
+
+
+		# no newTrades, extend prev. Positions, if available
+		if len(prevPos) > 0:
+			#print('extend mkdDate')
+			# check for expired contract, and put trade in
+			for idx in range(0, len(prevPos)):
+				exp = prevPos.iloc[idx]['contract'].split()[0]
+				if (pd.to_datetime(exp) - date) < dt.timedelta(days=0):
+					print('EXPIRED', exp)
+					con = prevPos.iloc[idx]['contract']
+					side = prevPos.iloc[idx]['side']
+					qnt = prevPos.iloc[idx]['quantity']
+					price = bigdataOption.getDetailsOnExpirationBySimple(option, contract=con)['close'][0]
+					self.addTrade(self.prevdate, con, 0, qnt, price)
+					self.addPortfolio(self.prevdate, 0, side*qnt*price*100, 0, 0, side*qnt*price*100)
+
+			prevPos = prevPos[prevPos['contract'].apply(lambda var: (pd.to_datetime(var.split()[0]) - date) >= dt.timedelta(days=0))]
+			idx = []
+			for item in range(0, len(prevPos)): idx.append(date)
+			prevPos.index = idx
+
+			return
+			showMe(date)
+			# update mktData ### DEV
+			for idx in range(0, len(prevPos)):
+					con = prevPos.iloc[idx]['contract']
+					mean_price = bigdataOption.getContractBySimple(option, date, contract=con)['mean_price']
+					prevPos.loc[prevPos['contract'] == con, 'value'] = mean_price
+			self.addPositionFromTrade(prevPos, values=True)
+		return
+
+
+
+	def run(self, stock, option):
+		delta = 0.2
+		duration = 45
+		for date in stock.loc[(stock.index >= self.startdate) & (stock.index < self.enddate)].index:
+			rank = stock.loc[date]['iv-close-Rank50']
+			rank252 = stock.loc[date]['iv-close-Rank252']
+			if rank > 60 and rank252 < 85:
+				showMe('###################################################################')
+				showMe('##### Date:', date)
+				showMe('##### Stock Price (close):', stock.loc[date]['close'], 'iv-close:', stock.loc[date]['iv-close'])
+				showMe('##### Open Trade. Trigger: iv-close-Rank50 value:', rank)
+
+				# get Contract
+				# Put
+				contract = bigdataOption.getContractByDelta(option, date, delta, call_put='P', duration=duration)
+				con = '{} {} {}'.format(str(contract['option_expiration'][0]).split()[0], contract['call_put'][0], contract['strike'][0])
+				showMe('##### Contract:', con)
+				self.addTrade(date, con, -1, 1, contract['mean_price'][0])
+			self.updatePosition(date, stock, option)
+			self.prevdate = date
+		showMe(self.portfolio['cash'].expanding().sum())
+		self.portfolio.to_csv('portfolio/{}-portfolio.csv'.format(self.metadata.name))
+		self.trades.to_csv('portfolio/{}-trades.csv'.format(self.metadata.name))
+		self.position.to_csv('portfolio/{}-position.csv'.format(self.metadata.name))

@@ -1,4 +1,6 @@
 # import
+from strategy import strategy
+import indicator
 
 # start script
 showMe('starting script', id)
@@ -13,8 +15,21 @@ ind['MA20'] = indicator.getMA(stock['close'], window=20)
 ind['MA50'] = indicator.getMA(stock['close'], window=50)
 ind['ivrank50'] = indicator.getRank(stock['iv-close'], window=50)
 
-# create portfolio
-pf = portfolio(getnextid('portfolio'), value=100000, startdate='2007-01-01', enddate='2008-01-01')
+# create strategy
+strat = strategy()
+strat.setStock(stock)
+#strat.setOption(option)
+strat.setIndicator(ind)
+strat.addTrigger('datemonth', "self.newWeek()")
+strat.addTrigger('ivrank', "self.indicatorData('ivrank50') > 50")
+strat.runDates(enddate='2008-01-01')
+
+
+
+
+
+
+
 
 
 

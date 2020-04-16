@@ -1,8 +1,5 @@
 # includes
 from manager.process import process
-import indicator
-from portfolio import portfolio
-from strategy import strategy
 
 import pandas as pd
 import numpy as np

@@ -24,11 +24,6 @@ def createyaml():
 	yaml = { 'id': {'script':0, 'portfolio':0, 'strategy':0, 'trade':0} }
 	writeyaml(yaml)
 	return yaml
-def getnextscriptid():
-	doc = readyaml()
-	doc['id']['script'] +=1
-	writeyaml(doc)
-	return doc['id']['script']
 def getnextid(kind):
 	doc = readyaml()
 	v = kind.lower()
