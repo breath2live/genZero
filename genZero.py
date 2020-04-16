@@ -38,7 +38,7 @@ def run():
 	global idcnt
 	showMe('setup...')
 	### DEV
-	runningFile.append(process(loadfile, 'script', getnextid('script')).start())
+	runningFile.append(process(loadfile, 'script.py', getnextid('script')).start())
 	Timer(20, sys.exit(1)).start()
 	###
 	showMe('ready for inputs')

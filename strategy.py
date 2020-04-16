@@ -70,15 +70,19 @@ class strategy():
 
 	# various methos
 	def checkTriggers(self):
-		res = []
-		for cmd in self.trigger['condition']: exec('res.append({})'.format(cmd))
-		return False not in res
+		for cmd in self.trigger['condition']:
+			if eval(cmd) == False: return False
+		return True
 	def execStrategy(self):
 		for cmd in self.execute['command']: exec(cmd)
-	def indicatorData(self, column):
+	def indicatorRow(self, column):
 		if self.indicator is not None:
 			if column in self.indicator.columns:
 				return self.indicator.loc[self.date][column]
+	def stockRow(self, column):
+		if self.stock is not None:
+			if column in self.stock.columns:
+				return self.stock.loc[self.date][column]
 	def doneStrategy(self):
 		showMe('duration of strategy:', self.endtime - self.starttime)
 
