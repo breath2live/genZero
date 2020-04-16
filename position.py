@@ -7,9 +7,9 @@ class position():
 		def __init__(self, id):
 			self.id = id
 			self.name = 'position-' + str(id)
+			self.opendate = None
+			self.closedate = None
+			self.closetype = None
 
 	def __init__(self):
 		self.metadata = self.metadata(getnextid('position'))
-		self.opendate = None
-		self.closedate = None
-		self.closetype = None

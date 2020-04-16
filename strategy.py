@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import datetime
 from helper import showMe, getnextid
+import matplotlib.pyplot as plt
+
 
 
 class strategy():
@@ -9,8 +11,9 @@ class strategy():
 	#ids = []
 
 	# unshared
-	trigger = pd.DataFrame([], index=[], columns=['condition'])
+	condition = pd.DataFrame([], index=[], columns=['condition'])
 	execute = pd.DataFrame([], index=[], columns=['command'])
+	trigger = pd.DataFrame([], index=[], columns=['trigger'])
 
 	# init and metadata
 	class metadata():
@@ -38,6 +41,7 @@ class strategy():
 	# set methods
 	def setStock(self, stock):
 		self.stock = stock
+		self.trigger = pd.DataFrame([0 for x in range(len(self.stock.index))], index=self.stock.index, columns=['trigger'])
 	def setOption(self, option):
 		self.option = option
 	def setIndicator(self, indicator):
@@ -45,7 +49,7 @@ class strategy():
 	def setPortfolio(self, pf):
 		self.metadata.portfolio = pf
 
-	# helpers for trigger
+	# helpers for condition
 	def newWeek(self):
 		if self.date.weekofyear != self.currentweek:
 			self.currentweek = self.date.weekofyear
@@ -63,14 +67,14 @@ class strategy():
 		return False
 
 	# adder methods
-	def addTrigger(self, name, condition):
-		self.trigger = self.trigger.append(pd.DataFrame( [[condition]], index=[name], columns=self.trigger.columns))
+	def addCondition(self, name, condition):
+		self.condition = self.condition.append(pd.DataFrame( [condition], index=[name], columns=self.condition.columns))
 	def addExecution(self, name, command):
 		self.execute = self.execute.append(pd.DataFrame( [command], index=[name], columns=self.execute.columns))
 
 	# various methos
-	def checkTriggers(self):
-		for cmd in self.trigger['condition']:
+	def checkConditions(self):
+		for cmd in self.condition['condition']:
 			if eval(cmd) == False: return False
 		return True
 	def execStrategy(self):
@@ -85,15 +89,27 @@ class strategy():
 				return self.stock.loc[self.date][column]
 	def doneStrategy(self):
 		showMe('duration of strategy:', self.endtime - self.starttime)
+		showMe(len(self.stock), len(self.trigger))
+
+		fig, ax = plt.subplots(nrows=2, figsize=(18,8))
+		ax[0].plot(self.stock.index, self.stock['close'], label='SPY')
+		ax[0].legend()
+		ax[1].plot(self.stock.index, self.trigger['trigger'], label='Trigger')
+		ax[1].legend()
+
+		plt.savefig('fig')
+
 
 	# runner methods
 	def runDates(self, startdate='2007-01-01', enddate='2020-01-01'):
-		self.starttime = datetime.datetime.now()
 		self.prevdate = startdate
+		self.starttime = datetime.datetime.now()
 		for date in self.stock.loc[(self.stock.index >= startdate) & (self.stock.index < enddate)].index:
 			self.runDate(date)
-		self.doneStrategy()
 		self.endtime = datetime.datetime.now()
+		self.doneStrategy()
 	def runDate(self, date):
 		self.date = date
-		if self.checkTriggers(): self.execStrategy()
+		if self.checkConditions():
+			self.trigger.loc[date]['trigger'] = 1
+			self.execStrategy()
