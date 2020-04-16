@@ -88,12 +88,12 @@ class strategy():
 
 	# runner methods
 	def runDates(self, startdate='2007-01-01', enddate='2020-01-01'):
-		self.prevdate = startdate
 		self.starttime = datetime.datetime.now()
+		self.prevdate = startdate
 		for date in self.stock.loc[(self.stock.index >= startdate) & (self.stock.index < enddate)].index:
 			self.runDate(date)
-		self.endtime = datetime.datetime.now()
 		self.doneStrategy()
+		self.endtime = datetime.datetime.now()
 	def runDate(self, date):
 		self.date = date
 		if self.checkTriggers(): self.execStrategy()
