@@ -13,3 +13,4 @@ class position():
 
 	def __init__(self):
 		self.metadata = self.metadata(getnextid('position'))
+		self.legs = []

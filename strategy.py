@@ -74,11 +74,19 @@ class strategy():
 
 	# various methos
 	def checkConditions(self):
-		for cmd in self.condition['condition']:
-			if eval(cmd) == False: return False
-		return True
-	def execStrategy(self):
-		for cmd in self.execute['command']: exec(cmd)
+		for condid in self.condition.index.unique():
+			condcnt = len(self.condition.loc[condid]['condition'])
+			for cond in self.condition.loc[condid]['condition']:
+				if eval(cond) == True:
+					condcnt -= 1
+					if condcnt == 0: self.execStrategy(condid)
+					continue
+				break
+	def execStrategy(self, condid):
+		tmp = self.trigger.loc[self.date]['trigger']
+		if type(tmp) is list: tmp.append(condid)
+		else: tmp = [condid]
+		for cmd in self.execute.loc[[condid]]['command']: eval(cmd)
 	def indicatorRow(self, column):
 		if self.indicator is not None:
 			if column in self.indicator.columns:
@@ -94,7 +102,7 @@ class strategy():
 		fig, ax = plt.subplots(nrows=2, figsize=(18,8))
 		ax[0].plot(self.stock.index, self.stock['close'], label='SPY')
 		ax[0].legend()
-		ax[1].plot(self.stock.index, self.trigger['trigger'], label='Trigger')
+		ax[1].plot(self.trigger.index, self.trigger['trigger'], kind='point', label='Trigger')
 		ax[1].legend()
 
 		plt.savefig('fig')
@@ -110,6 +118,4 @@ class strategy():
 		self.doneStrategy()
 	def runDate(self, date):
 		self.date = date
-		if self.checkConditions():
-			self.trigger.loc[date]['trigger'] = 1
-			self.execStrategy()
+		self.checkConditions()
